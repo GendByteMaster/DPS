@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список автомобилей</title>
+</head>
+<body>
+    <h1>Список автомобилей</h1>
+    <ul>
+        {% for car in cars %}
+            <li>
+                <a href="{% url 'car_detail' car.pk %}">{{ car.model }} ({{ car.year }})</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

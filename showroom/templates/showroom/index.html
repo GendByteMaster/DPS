@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Автосалон</title>
+</head>
+<body>
+    <h1>Добро пожаловать в наш автосалон!</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'car_list' %}">Список автомобилей</a></li>
+            <li><a href="{% url 'add_car' %}">Добавить автомобиль</a></li>
+            <li><a href="{% url 'search_car' %}">Поиск автомобиля</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
